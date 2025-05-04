@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +38,7 @@ h1 {
     color: white;
 }
 
-.subcontainer { 
+.subcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,6 @@ h1 {
     color: white;
     margin: 5px 0;
 }
-
 
 .love {
     position: absolute;
@@ -67,10 +67,12 @@ h1 {
     0% {
         top: 40%;
     }
+
     50% {
         top: 60%;
     }
-    100%{
+
+    100% {
         top: 40%;
     }
 }
@@ -79,11 +81,23 @@ h1 {
     0% {
         top: 60%;
     }
+
     50% {
         top: 40%;
     }
-    100%{
+
+    100% {
         top: 60%;
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
     }
 }
 
@@ -117,4 +131,89 @@ h1 {
     left: 90%;
     opacity: 100%;
     animation: bounce2 2s infinite;
+}
+
+.btn {
+    display: flex;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.loves:hover .btn {
+    opacity: 100%;
+}
+
+button {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    font-size: 25px;
+    color: white;
+    border-radius: 1em;
+    border: 0;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+
+.show {
+    background-color: #0f0;
+    transition: 0.2s;
+}
+
+.color {
+    background-color: rgb(255, 0, 166);
+    transition: 0.2s;
+}
+
+.meme {
+    background-color: rgb(255, 225, 0);
+    transition: 0.2s;
+}
+
+.ig {
+    top: 20%;
+    left: 30%;
+    position: absolute;
+    background-color: rgb(196, 0, 111);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.loves:hover .ig {
+    opacity: 100%;
+}
+
+.facebook {
+    top: 20%;
+    left: 44%;
+    position: absolute;
+    background-color: rgb(0, 72, 255);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.loves:hover .facebook {
+    opacity: 100%;
+}
+
+#memeButton {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#memeContainer img {
+    position: absolute;
+    max-width: 250px;
+    max-height: 250px;
+    transition: transform 0.3s ease;
+}
+
+#memeContainer img:hover {
+    transform: scale(1.1);
 }

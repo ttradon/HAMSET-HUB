@@ -10,15 +10,24 @@
     <div class="container">
         <h1>To Hiw</h1>
         <div class="subcontainer">
-            <p>คำคม : ไอ จาม มันไม่ดี.. งั้นขอไอจีได้ปะ</p>
+            <p id="showtext">คำคม :</p>
             <p>สถานะ : โสด</p>
-            <p>คอนแทค : iG:p.phx_zx</p>
+            <p id="contacttext">คอนแทค :</p>
         </div>
         <div class="loves">
-            <img class="love" src="love.svg">   
-            <img class="hiw1" src="hiw.svg">
-            <img class="hiw2" src="hiw.svg">
+            <img class="love" src="/public/love.svg">   
+            <img class="hiw1" src="/public/hiw.svg">
+            <img class="hiw2" src="/public/hiw.svg">
+            <div class="btn">
+                <button id="showbtn" class="show" onclick="show()">Show</button>
+                <button id="colorbtn" class="color" onclick="color()">Color</button>
+                <button id="memebtn" class="meme" onclick="meme()">Meme</button>
+            </div>
+            <button id="ig" class="ig" onclick="ig()">IG</button>
+            <button id="facebook" class="facebook" onclick="facebook()">FACEBOOK</button>
         </div>
+        <div id="memeContainer"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
